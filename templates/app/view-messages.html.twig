@@ -1,0 +1,9 @@
+     {% set class = from == true ? 'message-sender' : 'message-receiver'%}
+     {{ oldmsg|raw }}
+     {% if message != '' %}
+          <div class="{{ class }}">
+               {{ message }}
+          </div>
+     {% endif %}
+
+

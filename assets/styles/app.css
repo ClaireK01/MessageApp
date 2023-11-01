@@ -1,0 +1,86 @@
+@import "@fortawesome/fontawesome-free/css/regular.min.css";
+@import "@fortawesome/fontawesome-free/css/solid.min.css";
+
+body {
+    background-color: lightgray;
+}
+
+.main-app{
+    display: flex;
+}
+
+.messenger-list{
+    width:20%;
+}
+.message-interface{
+    width: 75%;
+    max-height: 90vh;
+}
+
+#message-cont{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    max-height: 80%;
+}
+
+hr{
+    border:         none;
+    border-left:    1px solid hsla(200, 10%, 50%,100);
+    height:         90vh;
+    width:          1px;
+}
+
+#send-div{
+    bottom: 1rem;
+    width: 80%;
+    display: flex;
+}
+
+#input-sender{
+    padding: 1rem;
+    border-radius: 20px;
+    border: 1px darkgray solid;
+    margin: 1rem;
+    width: 100%;
+}
+
+.message-sender{
+    margin: 0.8rem;
+    padding: 2rem;
+    background-color: #1bcc1b;
+    display: block;
+    width: 40%;
+    color: white;
+    font-family: Roboto;
+    border-radius: 15px;
+}
+
+.message-receiver{
+    align-self: end;
+    margin: 0.8rem;
+    padding: 2rem;
+    background-color: #1b53cc;
+    display: block;
+    width: 40%;
+    color: white;
+    font-family: Roboto;
+    border-radius: 15px;
+}
+
+
+/*  bootstrap  */
+
+.btn{
+    margin: 1rem;
+    background-color: #1b53cc;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 1rem;
+}
+
+.btn:hover{
+    cursor: pointer;
+}

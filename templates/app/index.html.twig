@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+    <section class="main-app">
+        <div class="messenger-list"></div>
+        <hr>
+        <div class="message-interface">
+            <div id="message-cont" data-url="{{ path('app_view_messages') }}">
+                    {{ render(controller('App\\Controller\\AppController::getMessageView')) }}
+            </div>
+            <div id="send-div">
+                <input id="input-sender" placeholder="Envoyer un message..."><button class="btn btn-primary btn-send">Envoyer <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
